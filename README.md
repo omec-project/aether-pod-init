@@ -3,6 +3,6 @@ SPDX-FileCopyrightText: 2021 Open Networking Foundation <info@opennetworking.org
 
 SPDX-License-Identifier: Apache-2.0
 -->
-# omec-pod-init
+# aether-pod-init
 
-Dockerfile in this reposity packages utilities required OMEC pod init containers.
+Dockerfile in this repository packages utilities required by Aether SD-Core pod init container
