@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 
-FROM alpine:3.21 AS pod-init
+FROM alpine:3.22 AS pod-init
 
 LABEL description="ONF open source 5G Core Network" \
     version="Stage 3"
