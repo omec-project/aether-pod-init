@@ -14,7 +14,7 @@ jobs:
 
   release-image:
     needs: tag-github
-    uses: omec-project/.github/.github/workflows/release-image.yml@main
+    uses: omec-project/.github/.github/workflows/release-image-no-golang.yml@main
     with:
       changed: ${{ needs.tag-github.outputs.changed }}
       version: ${{ needs.tag-github.outputs.version }}
