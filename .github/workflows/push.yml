@@ -29,7 +29,7 @@ jobs:
       actions: read
       id-token: write
       attestations: write
-    uses: omec-project/.github/.github/workflows/release-image-no-golang.yml@4c4b1670edc14f7f8f95b6be5e1cb779b86b2716 # v0.0.16
+    uses: omec-project/.github/.github/workflows/release-image.yml@4c4b1670edc14f7f8f95b6be5e1cb779b86b2716 # v0.0.16
     with:
       changed: ${{ needs.tag-github.outputs.changed }}
       version: ${{ needs.tag-github.outputs.version }}
