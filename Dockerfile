@@ -24,4 +24,4 @@ LABEL org.opencontainers.image.source="${VCS_URL}" \
     org.opencontainers.image.licenses="Apache-2.0" \
     org.opencontainers.image.documentation="https://docs.sd-core.aetherproject.org/"
 
-RUN apk update && apk add --no-cache bind-tools
+RUN apk add --no-cache bind-tools
