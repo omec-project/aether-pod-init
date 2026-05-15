@@ -11,3 +11,9 @@ repos:
   hooks:
   - id: end-of-file-fixer
   - id: trailing-whitespace
+    args:
+    - --markdown-linebreak-ext=markdown
+- repo: https://codeberg.org/fsfe/reuse-tool
+  rev: v6.2.0
+  hooks:
+  - id: reuse
