@@ -24,4 +24,11 @@ LABEL org.opencontainers.image.source="${VCS_URL}" \
     org.opencontainers.image.licenses="Apache-2.0" \
     org.opencontainers.image.documentation="https://docs.sd-core.aetherproject.org/"
 
+# bind-tools is for nslookup.
 RUN apk add --no-cache bind-tools
+
+# Run as an unprivileged user. The container that sets up core dumps on the host asks for root
+# (runAsUser: 0) in its pod spec.
+RUN addgroup -S -g 1000 aether && adduser -S -u 1000 -G aether aether
+
+USER 1000:1000
